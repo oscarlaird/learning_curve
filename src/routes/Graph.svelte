@@ -176,6 +176,5 @@
     .graph {
         width: 1000px;
         height: 1000px;
-        outline: 3px dashed black;
     }
 </style>

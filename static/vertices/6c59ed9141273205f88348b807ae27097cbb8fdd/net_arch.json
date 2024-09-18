@@ -1,0 +1,30 @@
+[
+    {"type": "feature_map", "size": 32, "channels": 3, "id": 1},
+    {"type": "module", "kernel": 5, "title": "Conv2D", "groups": 1, "id": 2},
+    {"type": "feature_map", "size": 32, "channels": 128, "id": 3},
+    {"type": "module", "title": "Maxpool", "size": 2, "id": 4},
+    {"type": "feature_map", "size": 16, "channels": 128, "id": 5},
+    
+    {"type": "module", "kernel": 5, "title": "Conv2D", "groups": 16, "id": 6},
+    {"type": "feature_map", "size": 16, "channels": 256, "id": 7},
+    {"type": "module", "title": "Maxpool", "size": 2, "id": 8},
+    {"type": "feature_map", "size": 8, "channels": 256, "id": 9},
+
+    {"type": "module", "kernel": 5, "title": "Conv2D", "groups": 16, "id": 10},
+    {"type": "feature_map", "size": 8, "channels": 512, "id": 11},
+
+    {"type": "module", "title": "Upsample", "scale_factor": 2, "id": 12},
+    {"type": "feature_map", "size": 16, "channels": 512, "id": 13},
+    {"type": "module", "kernel": 5, "title": "Conv2D", "groups": 16, "id": 14},
+    {"type": "feature_map", "size": 16, "channels": 256, "id": 15},
+
+    {"type": "module", "title": "Upsample", "scale_factor": 2, "id": 16},
+    {"type": "feature_map", "size": 32, "channels": 256, "id": 17},
+    {"type": "module", "kernel": 5, "title": "Conv2D", "groups": 16, "id": 18},
+    {"type": "feature_map", "size": 32, "channels": 128, "id": 19},
+
+    {"type": "module", "title": "Upsample", "scale_factor": 2, "id": 20},
+    {"type": "feature_map", "size": 32, "channels": 128, "id": 21},
+    {"type": "module", "kernel": 5, "title": "Conv2D", "groups": 1, "id": 22},
+    {"type": "feature_map", "size": 32, "channels": 3, "id": 23}
+]

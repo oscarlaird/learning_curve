@@ -24,8 +24,9 @@ const unet = [
     {type: 'feature_map', size: 32, channels: 3, id: 19},
 
 ]
-let unet2 = JSON.parse(JSON.stringify(unet))
-unet2.splice(9, 2)
-unet2[2] = {...unet2[2], channels: 128}
+let unet2 = JSON.parse(JSON.stringify(unet));
+unet2.splice(9, 2);
+unet2[2] = {...unet2[2], channels: 128};
+unet2[1] = {...unet2[1], kernel: 1};
 
 export { unet, unet2 }
